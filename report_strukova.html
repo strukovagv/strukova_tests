@@ -1,0 +1,565 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>79</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>31</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">create</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">search_and_del</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">login.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Login - open-eshop</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>css=div#logo input[name='search']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=section#page a</td>
+	<td>Forgot password?</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=section#page form.well a.btn.btn-default</td>
+	<td>Register</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page input[name='remember']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page form.well button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.page-header h1</td>
+	<td>Welcome*</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">create.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">create</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>Strukova_testq</td>
+	<td>cName</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Welcome - open-eshop</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']//h3[@class='panel-title' and ./text()='Latest News']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']//h3[@class='panel-title' and ./text()='Tweets by @openeshop']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']//h3[@class='panel-title' and ./text()='Open-eShop on Facebook']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='mobile-menu-panel']//span[@class='side-name-link' and ./text()='Market']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertAttribute</td>
+	<td>//div[@id='content']/div[@class='page-header']//a@href</td>
+	<td>*/open-eshop-2.0.1/oc-panel/update?reload=1</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//div[@class='page-header']//a[@class='btn btn-xs btn-primary pull-right']</td>
+	<td>Check for updates</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='accordion']//span[@class='title-txt active' and ./text()='eShop']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='collapseOne']//span[@class='side-name-link' and ./text()='Coupons']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id='content']/div[@class='page-header']/h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='content']/a[contains(@href, '/Coupon/create')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id='content']//a[@class='btn btn-default btn-fixed active' and ./text()='Fixed Discount']</td>
+	<td>Fixed Discount</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//div[@id='content']//a[@class='btn btn-default btn-percentage' and ./text()='Percentage Discount']</td>
+	<td>Percentage Discount</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>id=name</td>
+	<td>${cName}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>id=discount_amount</td>
+	<td>1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=valid_date</td>
+	<td>20160801</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id='content']//table[@class='table table-striped table-bordered']//th[./text()='Name']</td>
+	<td>Name</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>*Coupon ${cName} created</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.1</td>
+	<td>Product</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.2</td>
+	<td>Discount</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.3</td>
+	<td>Number Coupons</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.4</td>
+	<td>Valid until</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.5</td>
+	<td>Created</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.0.6</td>
+	<td>Actions</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//div[@class='page-header']//a</td>
+	<td>Read more</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']/p/a[.='Browse Themes']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']/a[contains(@href, '/Coupon/bulk')]</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=div.table-responsive table.table td</td>
+	<td>${cName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>name=submit</td>
+	<td>Upload</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertAttribute</td>
+	<td>//div[@id='content']//div[@class='panel panel-default']/a@href</td>
+	<td>*/open-eshop-2.0.1/oc-panel/Coupon/export</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//div[@id='content']//div[@class='panel panel-default']/a</td>
+	<td>Export all</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search_and_del.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search_and_del</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>Strukova_testq</td>
+	<td>cName</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>${cName}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.table-responsive table.table td</td>
+	<td>${cName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.0</td>
+	<td>${cName}</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.3</td>
+	<td>1</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.4</td>
+	<td>01-08-16</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=table.table i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForVisible</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForEval</td>
+	<td>window.$("div#content table.table tr:visible").length</td>
+	<td>1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>css=div.table-responsive table.table td</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertXpathCount</td>
+	<td>//div[@id='content']//table[@class='table table-striped table-bordered']//tbody//tr</td>
+	<td>0</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">logout.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon?name=strukova_test</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.header-container div.btn-group</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.header-container a.btn.dropdown-toggle.btn-success</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//a[contains(@href, '/open-eshop-2.0.1/oc-panel/auth/logout')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=section#page form.well button.btn.btn-primary</td>
+	<td>Login</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/login.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/auth/login |  |
+info: Executing: |verifyTitle | Login - open-eshop |  |
+info: Executing: |assertElementPresent | css=div#logo input[name=&apos;search&apos;] |  |
+info: Executing: |assertText | css=section#page a | Forgot password? |
+info: Executing: |assertText | css=section#page form.well a.btn.btn-default | Register |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |sendKeys | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |sendKeys | css=section#page input[name=&apos;password&apos;] | demo |
+info: Executing: |click | css=section#page input[name=&apos;remember&apos;] |  |
+info: Executing: |click | css=section#page form.well button.btn.btn-primary |  |
+info: Executing: |waitForText | css=div.page-header h1 | Welcome* |
+info: Starting test /selenium-server/tests/create.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel |  |
+info: Executing: |store | Strukova_testq | cName |
+info: Executing: |assertTitle | Welcome - open-eshop |  |
+info: Executing: |assertElementPresent | //div[@id=&apos;content&apos;]//h3[@class=&apos;panel-title&apos; and ./text()=&apos;Latest News&apos;] |  |
+info: Executing: |assertElementPresent | //div[@id=&apos;content&apos;]//h3[@class=&apos;panel-title&apos; and ./text()=&apos;Tweets by @openeshop&apos;] |  |
+info: Executing: |assertElementPresent | //div[@id=&apos;content&apos;]//h3[@class=&apos;panel-title&apos; and ./text()=&apos;Open-eShop on Facebook&apos;] |  |
+info: Executing: |assertElementPresent | //div[@id=&apos;mobile-menu-panel&apos;]//span[@class=&apos;side-name-link&apos; and ./text()=&apos;Market&apos;] |  |
+info: Executing: |assertAttribute | //div[@id=&apos;content&apos;]/div[@class=&apos;page-header&apos;]//a@href | */open-eshop-2.0.1/oc-panel/update?reload=1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertText | //div[@class=&apos;page-header&apos;]//a[@class=&apos;btn btn-xs btn-primary pull-right&apos;] | Check for updates |
+info: Executing: |click | //div[@id=&apos;accordion&apos;]//span[@class=&apos;title-txt active&apos; and ./text()=&apos;eShop&apos;] |  |
+info: Executing: |click | //div[@id=&apos;collapseOne&apos;]//span[@class=&apos;side-name-link&apos; and ./text()=&apos;Coupons&apos;] |  |
+info: Executing: |waitForText | //div[@id=&apos;content&apos;]/div[@class=&apos;page-header&apos;]/h1 | Coupon |
+info: Executing: |click | //div[@id=&apos;content&apos;]/a[contains(@href, &apos;/Coupon/create&apos;)] |  |
+info: Executing: |waitForElementPresent | name=submit |  |
+info: Executing: |waitForText | //div[@id=&apos;content&apos;]//a[@class=&apos;btn btn-default btn-fixed active&apos; and ./text()=&apos;Fixed Discount&apos;] | Fixed Discount |
+info: Executing: |assertText | //div[@id=&apos;content&apos;]//a[@class=&apos;btn btn-default btn-percentage&apos; and ./text()=&apos;Percentage Discount&apos;] | Percentage Discount |
+info: Executing: |assertText | css=div#crud h1 | Create coupon |
+info: Executing: |sendKeys | id=name | ${cName} |
+info: Executing: |sendKeys | id=discount_amount | 1 |
+info: Executing: |sendKeys | name=valid_date | 20160801 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=submit |  |
+info: Executing: |waitForText | //div[@id=&apos;content&apos;]//table[@class=&apos;table table-striped table-bordered&apos;]//th[./text()=&apos;Name&apos;] | Name |
+info: Executing: |assertText | css=div.alert.alert-success | *Coupon ${cName} created |
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.1 | Product |
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.2 | Discount |
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.3 | Number Coupons |
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.4 | Valid until |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.5 | Created |
+info: Executing: |assertTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.0.6 | Actions |
+info: Executing: |assertText | //div[@class=&apos;page-header&apos;]//a | Read more |
+info: Executing: |assertElementPresent | //div[@id=&apos;content&apos;]/p/a[.=&apos;Browse Themes&apos;] |  |
+info: Executing: |assertElementPresent | //div[@id=&apos;content&apos;]/a[contains(@href, &apos;/Coupon/bulk&apos;)] |  |
+info: Executing: |assertText | css=div.table-responsive table.table td | ${cName} |
+info: Executing: |assertText | name=submit | Upload |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertAttribute | //div[@id=&apos;content&apos;]//div[@class=&apos;panel panel-default&apos;]/a@href | */open-eshop-2.0.1/oc-panel/Coupon/export |
+info: Executing: |assertText | //div[@id=&apos;content&apos;]//div[@class=&apos;panel panel-default&apos;]/a | Export all |
+info: Starting test /selenium-server/tests/search_and_del.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | Strukova_testq | cName |
+info: Executing: |sendKeys | name=name | ${cName} |
+info: Executing: |click | css=button.btn |  |
+info: Executing: |waitForText | css=div.table-responsive table.table td | ${cName} |
+info: Executing: |verifyTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.1.0 | ${cName} |
+info: Executing: |verifyTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.1.3 | 1 |
+info: Executing: |verifyTable | //div[@id=&apos;content&apos;]//div[@class=&apos;table-responsive&apos;]/table.1.4 | 01-08-16 |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=table.table i.glyphicon-trash |  |
+info: Executing: |waitForVisible | css=div.sweet-alert.showSweetAlert.visible |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div.sweet-alert button.confirm |  |
+info: Executing: |waitForEval | window.$(&quot;div#content table.table tr:visible&quot;).length | 1 |
+info: script is: window.$(&quot;div#content table.table tr:visible&quot;).length
+info: script is: window.$(&quot;div#content table.table tr:visible&quot;).length
+info: Executing: |click | css=button.btn |  |
+info: Executing: |waitForElementNotPresent | css=div.table-responsive table.table td |  |
+info: Executing: |assertXpathCount | //div[@id=&apos;content&apos;]//table[@class=&apos;table table-striped table-bordered&apos;]//tbody//tr | 0 |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon?name=strukova_test |  |
+info: Executing: |waitForElementPresent | css=div.header-container div.btn-group |  |
+info: Executing: |click | css=div.header-container a.btn.dropdown-toggle.btn-success |  |
+info: Executing: |click | //a[contains(@href, &apos;/open-eshop-2.0.1/oc-panel/auth/logout&apos;)] |  |
+info: Executing: |waitForText | css=section#page form.well button.btn.btn-primary | Login |
+</pre></body></html>

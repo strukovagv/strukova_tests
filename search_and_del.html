@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/open-eshop-2.0.1/oc-panel" />
+<title>search_and_del</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search_and_del</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Strukova_testq</td>
+	<td>cName</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>${cName}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.table-responsive table.table td</td>
+	<td>${cName}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.0</td>
+	<td>${cName}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>//div[@id='content']//div[@class='table-responsive']/table.1.4</td>
+	<td>01-08-16</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=table.table i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForEval</td>
+	<td>window.$(&quot;div#content table.table tr:visible&quot;).length</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.table-responsive table.table td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertXpathCount</td>
+	<td>//div[@id='content']//table[@class='table table-striped table-bordered']//tbody//tr</td>
+	<td>0</td>
+</tr>
+</tbody></table>
+</body>
+</html>
